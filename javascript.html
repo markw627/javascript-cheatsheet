@@ -1,0 +1,147 @@
+<html>
+	<head>
+
+<!-- ***** THIS IS A JAVASCRIPT CHEATSHEET ***** -->
+
+	</head>
+
+	<body>
+
+
+<!-- –––––––––– This is a calculator. See external JS file –––––––––– -->
+
+
+    Number 1: <input type="text" id="num1">
+    Number 2: <input type="text" id="num2">
+    <button id="add" onclick="addNums()">Click to add</button>
+    <br>
+    Result: <span id="result"></span>		
+
+
+<!-- –––––––––– Change innerHTML exercise. See line 42 –––––––––– -->
+
+
+	<div onclick="change()" id="el">SEE YA LATER ALLIGATOR</div>
+
+
+<!-- –––––––––– Link to the JS code for the calculator –––––––––– -->	
+
+
+    <script src="app.js"></script>	
+
+
+<!-- ******************** JAVASCRIPT EXERCISES ******************** -->	
+
+
+		<script type="text/javascript">
+
+
+		// –––––––––– Change innerHTML exercise. See line 24 ––––––––––
+
+
+			function change(){
+  		document.getElementById('el').innerHTML = "IN A WHILE CROCODILE";
+			}
+
+
+		// –––––––––– This is an alert ––––––––––
+
+
+			alert('Hello World!');		
+
+
+		// –––––––––– This a function with an alert ––––––––––
+
+
+			function declarename (firstname) {
+				return alert("Hello " + firstname)
+			}
+
+			declarename("Mark");
+
+
+		// –––––––––– This is a print to the console ––––––––––
+
+
+			function saysomething () {
+			return console.log ("banana apple");
+			}
+
+			saysomething ();
+			saysomething ();
+
+
+		// –––––––––– Declare a function exercise ––––––––––
+
+
+			function opendoor(doornumber) {
+				if (doornumber === 1) {
+					return console.log("you win a banana");
+				} else if (doornumber === 2) {
+          return console.log("you win a lion");
+        } else if (doornumber === 3) {
+          return console.log("you win a glass of water");
+        } else {
+          return console.log("you lost! try again");
+        }
+      }
+
+      opendoor(5);
+      opendoor(1);
+
+
+		// –––––––––– String exercise ––––––––––      
+
+
+      var string1 = "The cat ";
+      var string2 = "is fat.";
+
+      var result = string1 + string2;
+
+      console.log(result);			
+
+
+		// –––––––––– Index/multi-dimensional array exercise ––––––––––      
+
+
+      var Mark = {
+        firstName: "Mark",
+        lastName: "West",
+        birthday: "June 27",
+        interests: ["hockey", "gardening"]
+      };
+
+      console.log(Mark.birthday);
+      console.log(Mark.interests[0]);
+
+
+		// –––––––––– Math exercise 01 ––––––––––
+
+
+			var num1 = 5;
+			var num2 = 10;
+
+			var result = num1 + num2;
+
+			console.log(result);
+			console.log(num1 + num2);
+
+
+		// –––––––––– Math exercise 02 ––––––––––
+
+
+			var num = 9;
+
+			if (num < 10) {
+				console.log("your number, " + num + ", is less than 10");
+			}	else {
+				console.log("your number, " + num + ", is greater or equal to 10");
+			}
+			
+			console.log(num)			
+
+
+		</script>
+
+	</body>
+</html>
